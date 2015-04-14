@@ -1,0 +1,14 @@
+message Invoice {
+    required string invoiceId = 1;
+    required string invoiceNumber = 2;
+    required string supplierName = 3;
+    required string buyerName = 4;
+    optional string licenseId = 5;
+    repeated TradeItem tradeItems = 6;
+}
+
+message TradeItem {
+    required int32 productCode = 1;
+    required string manufacturerName = 2;
+    required double quantity = 3;
+}
